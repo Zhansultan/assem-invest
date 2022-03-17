@@ -116,4 +116,8 @@
     .contacts {
         margin-top: 50px;
     }
+
+     .sya-mask__img {
+         display: none;
+     }
  }
