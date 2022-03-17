@@ -57,7 +57,18 @@
         </div>
 	</section>
 	<section class="aside-backdrop" id="aside-backdrop" onclick="toggleMenu('hide')"></section>
-    
+
+    <section class="modal" id="modal">
+        <form class="modal-form">
+            <img class="modal-form__close" src="images/cancel-music.svg" alt="close" onclick="modal_close()">
+            <span class="modal-form__title"> Заявка успешно отправлена! </span>
+            <span class="modal-form__title"> Мы перезвоним вам в ближайшее время </span>
+        </form>
+        <div class="modal-backdrop" onclick="modal_close()">
+
+        </div>
+    </section>
+
     <section class="header">
         <section class="header-top">
             <div class="header-top-phone">
@@ -130,7 +141,7 @@
         </div>
 
             <div class="whatsapp">
-                <a href="whatsapp://send?text=Здравствуйте!%20хочу%20проконсультироваться&phone=+77087545596&abid=+77087545596">
+                <a href="whatsapp://send?text=Здравствуйте!%20хочу%20проконсультироваться%20по%20поводу%20ваших%20услуг&phone=+77785247374&abid=+77785247374">
                 <div class="whatsapp-img">
                     <img class="img_55" src="images/whatsapp.png" alt="">
                 </div>
@@ -316,8 +327,8 @@
             <span class="sya-text-container__text">Оставьте заявку, заполнив форму</span>
         </div>
         <div class="sya-form">
-            <form action="<?=$_SERVER['PHP_SELF'];?>" method="POST">
-                <input class="sya-form__input" type="text" name="user_name" placeholder="Имя" required/>
+            <form id="myform">
+                <input class="sya-form__input" type="text" id="user_name" name="user_name" placeholder="Имя" required/>
                 <input class="sya-form__input mt-29" type="phone" id="phone" name="user_phone" placeholder="+7(___)_______" required/>
                 <input type="submit" name="submit" class="sya-form__btn mt-29" value="Отправить"/>
             </form>
@@ -340,7 +351,6 @@
                 </div>
                 <div class="ml-12">
                     <span class="contacts-info-items__text"><a href="tel:+77785247374">+7 778 524 73 74</a></span>
-                    <span class="contacts-info-items__text"><a href="tel:+77779497070">+7 777 949 70 70</a></span>
                 </div>
             </div>
             <div class="contacts-info-items">
@@ -363,6 +373,10 @@
         </section>
     </section>
 </body>
+<script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/change_color.js"></script>
 <script src="js/aside.js"></script>
+<script src="js/modal.js"></script>
 </html>
+
+
