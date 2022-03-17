@@ -1,0 +1,107 @@
+.benefits {
+    padding: 100px 7%;
+}
+    
+
+.title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 139.69%;
+    /* or 50px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+    .title-cont {
+        position: relative;
+    }
+    .title-line {
+        transition: all .2s ease-in-out;
+        right: -43px; 
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 48px;
+        height: 116px;
+        position: absolute;
+        background: url('../../images/Line_110px.png');
+        background-repeat: no-repeat;
+    }
+
+.benefits-description {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+    .benefits-container {
+        padding-top: 67px;
+    }
+        .benefits-container__title {
+            padding-top: 25px;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 139.69%;
+            /* identical to box height, or 34px */
+
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+
+            color: #000000;
+        }
+        .benefits-container-desc {
+            padding-top: 32px;
+        }
+            .benefits-container-desc__text {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 139.69%;
+                /* or 25px */
+
+
+                color: #828282;
+            }
+    .img_95_px {
+        width: 95px;
+        height: 95px;
+    }
+
+    .ml_127 {
+        margin-left: 127px;
+    }
+
+
+
+@media screen and (max-width: 1378px) {
+    .benefits-description {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .benefits-container {
+        text-align: center;
+        margin-left: 0;
+    }
+    .title {
+        justify-content: center;
+    }
+    .benefits-container__title {
+        justify-content: center;   
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .title-line {
+        right: 0;
+    }
+}
+

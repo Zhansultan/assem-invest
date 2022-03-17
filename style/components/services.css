@@ -1,0 +1,155 @@
+.services {
+    padding: 38px 7%;
+}   
+    .services-title {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 139.69%;
+        /* or 50px */
+        
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        
+        color: #043C2B;
+        position: relative;
+    }
+        .services-title__text {
+            
+        }
+.service-title-line {
+    left: -43px;
+    transition: all .2s ease-in-out;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 48px;
+    height: 116px;
+    position: absolute;
+    background: url('../../images/Line 7.svg');
+    background-repeat: no-repeat;
+}
+
+.services-block-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px;
+    width: 353px;
+}
+
+.container-services {
+    margin-top: 85px;
+    display: grid;
+    gap: 20px;
+    height: 100vh;
+  
+    /* ! */
+    grid-template-areas:
+      "A A A A  B B B B  C C C C"
+      "A A A A  D D D D  E E E E";
+      height: max-content;
+}
+
+.container-service-title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 147% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    display: block;
+    width: 100%;
+
+}
+.container-service-text {
+    padding-top: 21px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 138% */
+
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+    display: block;
+}
+.service-block-1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61) ), url('../../images/construction-worker-truss-installation.png');
+    background-size: cover;
+    grid-area: A;
+}
+
+.service-block-2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61) ), url('../../images/crop-architect-opening-blueprint.png');
+    background-size: cover;
+    grid-area: B;
+}
+
+.service-block-3 {
+    background: linear-gradient( rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61) ), url('../../images/precast-concrete-manufactory-product-construction-industrial.png');
+    background-size: cover;
+    grid-area: C;
+}
+
+.service-block-4 {
+    background: linear-gradient( rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61) ), url('../../images/construction-workers-fabricating-steel-reinforcement-bar-construction-site.png');
+    background-size: cover;
+    grid-area: D;
+}
+
+.service-block-5 {
+    background: linear-gradient( rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61) ), url('../../images/young-business-man-construction-site-engineer.png');
+    background-size: cover;
+    grid-area: E;
+}
+
+@media screen and (max-width: 1378px) {
+    .container-services {
+        grid-template-areas:
+        "A A A A B B B B "
+        "A A A A D D D D "
+        "C C C C E E E E";
+        grid-template-columns: 1fr 3fr;
+    }
+} 
+
+@media screen and (max-width: 970px) {
+    .container-services {
+        grid-template-areas:
+        "A A A A "
+        "A A A A "
+        "B B B B "
+        "C C C C "
+        "D D D D "
+        "E E E E";
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .services-block-text {
+        width: 90%;
+    }
+} 
+
+
+@media screen and (max-width: 768px) {
+
+    .services {
+        padding: 88px 7%;
+    }
+
+}
